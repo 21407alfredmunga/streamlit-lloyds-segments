@@ -1,5 +1,5 @@
 
-datascience_env/ipynb_checkpoints
+datascience_env/
 __pycache__/
 *.pyc
 .env
