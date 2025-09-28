@@ -78,7 +78,7 @@ else:
         values="Share",
         title="Share of customers by segment",
     )
-    st.plotly_chart(fig_segments, width='stretch')
+    st.plotly_chart(fig_segments, use_container_width=True)
 
     st.markdown("### Age by Segment")
     fig_age = px.box(
@@ -90,7 +90,7 @@ else:
         labels={"ClusterName": "Segment", "Age": "Age"},
     )
     fig_age.update_layout(showlegend=False)
-    st.plotly_chart(fig_age, width='stretch')
+    st.plotly_chart(fig_age, use_container_width=True)
 
     st.markdown("### Gender & Income Composition")
     composition = (
@@ -106,14 +106,14 @@ else:
         title="Customer count by gender, segment, and income",
     )
     fig_heatmap.update_layout(height=500)
-    st.plotly_chart(fig_heatmap, width='stretch')
+    st.plotly_chart(fig_heatmap, use_container_width=True)
 
     with st.expander("📋 Customer Table"):
         st.dataframe(
             filtered_df[["CustomerID", "Age", "Gender", "MaritalStatus", "IncomeLevel", "ClusterName"]]
             .rename(columns={"ClusterName": "Segment"})
             .sort_values("CustomerID"),
-            width='stretch',
+            use_container_width=True,
         )
 
 st.caption("Data source: Lloyds Bank customer segmentation notebook outputs.")
