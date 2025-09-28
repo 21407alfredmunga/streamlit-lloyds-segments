@@ -602,7 +602,7 @@ CustomerID,Age,Gender,MaritalStatus,IncomeLevel,Cluster
 601,41,F,Widowed,Low,2
 602,52,M,Widowed,Medium,3
 603,53,M,Single,High,0
-604,27,M,Divorced,Low,1# 
+604,27,M,Divorced,Low,1
 605,44,M,Divorced,Low,1
 606,44,F,Married,Low,2
 607,40,M,Married,High,0
