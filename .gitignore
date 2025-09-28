@@ -1,0 +1,6 @@
+
+datascience_env/ipynb_checkpoints
+__pycache__/
+*.pyc
+.env
+.venv
